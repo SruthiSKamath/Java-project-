@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Album {
+    String name;
+    int year;
+    int usPeakChartPost;
+
+    public Album(String name, int year, int usPeakChartPost) {
+        this.name = name;
+        this.year = year;
+        this.usPeakChartPost = usPeakChartPost;
+    }
+}
+
+public class AlbumData {
+    public static void main(String[] args) {
+        List<Album> albums = new ArrayList<>();
+
+        albums.add(new Album("Gilgamesh", 1975, -1));
+        albums.add(new Album("Sahakti with John McLaughlin", 1976, 194));
+        albums.add(new Album("A Handful of Beauty", 1976, 168));
+        albums.add(new Album("Natural Elements", 1977, -1));
+        albums.add(new Album("Another Fine Tune You've Got Me Into", 1979, -1));
+        albums.add(new Album("Arriving Twice", 2000, 3));
+        albums.add(new Album("Icky Thump", 2007, 2));
+        albums.add(new Album("Under Great White Northern Lights", 2010, 11));
+        albums.add(new Album("Live in Mississippi", 2011, -1));
+        albums.add(new Album("Live at the Gold Dollar", 2012, -1));
+        albums.add(new Album("Nine Miles from the White City", 2013, -1));
+
+        // You can now use the 'albums' list for further processing or display.
+    }
+}
